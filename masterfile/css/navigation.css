@@ -1,0 +1,24 @@
+@import url("./app-theme.css");
+
+/* ==========================================================================
+   Navigation Compatibility Styles
+   Coordinates with app-theme.css for legacy views and sidebar layouts
+   ========================================================================== */
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print utilities */
+@media print {
+  #app-sidebar,
+  #app-topbar,
+  #app-sidebar-backdrop {
+    display: none !important;
+  }
+  body.has-app-sidebar {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+  }
+}
